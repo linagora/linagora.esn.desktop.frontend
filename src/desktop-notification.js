@@ -1,4 +1,5 @@
-'use strict';
+(function(){
+  'use strict';
 
 var notifier = require('node-notifier');
 
@@ -13,7 +14,7 @@ angular.module('esn.notification', ['angularMoment', 'esn.escape-html', 'esn.i18
 
       return notifier.notify({
         title: options.title,
-        message: options.message
+        message: options.message,
         type: settings.type,
         time: settings.delay
       });
@@ -71,3 +72,4 @@ angular.module('esn.notification', ['angularMoment', 'esn.escape-html', 'esn.i18
     };
 
   });
+})();

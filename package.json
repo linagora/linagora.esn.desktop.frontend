@@ -1,0 +1,12 @@
+{
+  "name": "esn.notification",
+  "version": "0.0.1",
+  "description": "",
+  "main": "desktop-notification.js",
+  "dependencies": {
+    "node-notifier": "5.1.2"
+  },
+  "devDependencies": {
+  },
+  "author": ""
+}

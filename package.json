@@ -2,7 +2,7 @@
   "name": "esn.notification",
   "version": "0.0.1",
   "description": "",
-  "main": "desktop-notification.js",
+  "main": "index.js",
   "dependencies": {
     "node-notifier": "5.1.2"
   },

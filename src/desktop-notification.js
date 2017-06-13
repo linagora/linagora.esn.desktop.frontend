@@ -3,15 +3,10 @@
 
 var notifier = require('node-notifier');
 
-angular.module('esn.notification', ['angularMoment', 'esn.escape-html', 'esn.i18n'])
+angular.module('esn.notification', [])
 
-  .factory('notifyService', function($window, escapeHtmlUtils, esnI18nService) {
+  .factory('notifyService', function() {
     return function(options, settings) {
-      if (options) {
-        options.message = options.message ? esnI18nService.translate(options.message).toString() : options.message;
-        options.title = options.title ? esnI18nService.translate(options.title).toString() : options.title;
-      }
-
       return notifier.notify({
         title: options.title,
         message: options.message,

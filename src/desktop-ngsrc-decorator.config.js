@@ -4,7 +4,7 @@
   angular.module('linagora.esn.desktop.frontend')
     .config(configBlock);
 
-  function configBlock($provide, OP_REST_BASE_URL) {
+  function configBlock($provide, httpConfigurer) {
     $provide.decorator('ngSrcDirective', function($delegate) {
       var directive = $delegate[0];
 
@@ -16,7 +16,7 @@
             }
 
             if (value.indexOf('/api/') > -1) {
-              value = OP_REST_BASE_URL + value;
+              value = httpConfigurer.getUrl(value);
             }
 
             attr.$set('src', value);

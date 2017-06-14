@@ -1,12 +1,10 @@
 {
-  "name": "esn.notification",
+  "name": "linagora.esn.desktop.frontend",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
   "dependencies": {
     "node-notifier": "5.1.2"
   },
   "devDependencies": {
   },
-  "author": ""
+  "author": "Linagora Barcamp ☀️"
 }

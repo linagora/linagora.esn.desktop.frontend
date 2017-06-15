@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('linagora.esn.desktop.frontend')
+  angular.module('esn.http')
     .config(configBlock);
 
   function configBlock($provide, httpConfigurerProvider) {

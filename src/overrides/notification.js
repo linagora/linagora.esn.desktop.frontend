@@ -1,4 +1,4 @@
-(function(){
+(function() {
   'use strict';
 
 var notifier = require('node-notifier');

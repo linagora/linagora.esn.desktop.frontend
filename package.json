@@ -5,6 +5,10 @@
     "node-notifier": "5.1.2"
   },
   "devDependencies": {
+    "eslint": "3.6.0",
+    "eslint-config-airbnb-base": "8.0.0",
+    "eslint-config-linagora-esn": "git+https://ci.open-paas.org/stash/scm/or/eslint-config-linagora-esn.git#v1.1.0",
+    "eslint-plugin-import": "1.16.0"
   },
   "author": "Linagora Barcamp ☀️"
 }

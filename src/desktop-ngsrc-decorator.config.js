@@ -8,8 +8,8 @@
     $provide.decorator('ngSrcDirective', function($delegate) {
       var directive = $delegate[0];
 
-      directive.compile = function(element, attrs) {
-        return function (scope, element, attr) {
+      directive.compile = function() {
+        return function(scope, element, attr) {
           attr.$observe('ngSrc', function(value) {
             if (!value) {
               return;

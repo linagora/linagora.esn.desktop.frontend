@@ -4,6 +4,6 @@
   angular.module('esn.http').config(configBlock);
 
   function configBlock(httpConfigurerProvider) {
-    httpConfigurerProvider.setBaseUrl('http://localhost:8080');
+    httpConfigurerProvider.setBaseUrl(window.OP_BASE_URL || 'http://localhost:8080');
   }
 })();

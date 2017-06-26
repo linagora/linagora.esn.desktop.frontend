@@ -1,8 +1,13 @@
 {
   "name": "linagora.esn.desktop.frontend",
-  "version": "0.0.1",
+  "description": "OpenPaaS Frontend Desktop Module",
+  "version": "0.0.0",
   "dependencies": {
     "node-notifier": "5.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://ci.linagora.com/linagora/lgs/openpaas/linagora.esn.desktop.frontend.git"
   },
   "devDependencies": {
     "eslint": "3.6.0",
@@ -10,5 +15,6 @@
     "eslint-config-linagora-esn": "git+https://ci.open-paas.org/stash/scm/or/eslint-config-linagora-esn.git#v1.1.0",
     "eslint-plugin-import": "1.16.0"
   },
-  "author": "Linagora Barcamp ☀️"
+  "author": "Linagora folks <dev@linagora.com>",
+  "license": "AGPL-3.0"
 }

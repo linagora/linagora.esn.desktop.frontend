@@ -4,12 +4,15 @@
   const {ipcRenderer} = require('electron'); // eslint-disable-line import/no-unresolved
 
   angular.module('esn.login')
-    .factory('loginSuccessService', loginSuccessService);
+    .factory('esnLoginSuccessService', esnLoginSuccessService);
 
-    function loginSuccessService($log) {
+    function esnLoginSuccessService($log, $q) {
       return function() {
-        $log.debug('Sending login success to main process');
-        ipcRenderer.send('op:login:success');
+        return $q(function(resolve) {
+          $log.debug('Sending login success to main process');
+          ipcRenderer.send('op:login:success');
+          resolve();
+        });
       };
     }
 })();
